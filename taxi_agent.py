@@ -18,7 +18,7 @@ max_steps = 200 # Quantidade maxima de ações que o agente pode realizar até u
 
 q_table = np.zeros((env.observation_space.n, env.action_space.n)) # quantos estados o jogo pode ter e quantas ações posso tomar por estado 
 
-# ****analisar implementação
+
 
 #funcionamento das escolhas das ações
 
@@ -59,7 +59,7 @@ for episode in range(num_episodes):
         print(f"Episódio {episode}, epsilon={epsilon:.3f}")
 #reduz caso não esteja abaixo do mínimo
         
-#iniciando o ambiente (NÃO CONSIGO RODAAAAAAAAAAAR)
+#iniciando o ambiente 
 
 env = gym.make('Taxi-v3', render_mode='human')
 
@@ -84,7 +84,7 @@ for episode in range(5):
             print('Finished episode', episode, 'with reward', reward)
             break
         
-##printando o treinamento
+#printando o treinamento
 
 plt.plot(rewards_per_episode)
 plt.xlabel('Episódio')
